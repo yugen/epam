@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sqlalchemy = "*"
+alembic = "*"
+application = {editable = true, path = "./src"}
+
+[dev-packages]
+pytest = "*"
+pytest-icdiff = "*"
+mypy = "*"
+
+[requires]
+python_version = "3.9"
